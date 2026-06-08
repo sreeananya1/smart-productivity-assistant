@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "20-20-20 Eye Break Reminder",
+  "version": "1.0",
+  "description": "Reminds you every 20 minutes to take a 20-second break and look at something 20 feet away.",
+  "permissions": ["alarms", "notifications", "scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "host_permissions": ["<all_urls>"]
+}
