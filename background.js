@@ -11,7 +11,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         });
 
         // Reset alarm
-        chrome.alarms.create("eyeBreakReminder", { delayInMinutes: 1 }); // change to 20 for actual use
+        chrome.alarms.create("eyeBreakReminder", { delayInMinutes: 20 }); // change to 20 for actual use
     }
 });
 
@@ -27,11 +27,11 @@ chrome.notifications.onButtonClicked.addListener((notificationId, buttonIndex) =
             }
         });
 
-        chrome.alarms.create("eyeBreakReminder", { delayInMinutes: 1 });
+        chrome.alarms.create("eyeBreakReminder", { delayInMinutes: 20 });
     }
 });
 
 // Set alarm when installed
 chrome.runtime.onInstalled.addListener(() => {
-    chrome.alarms.create("eyeBreakReminder", { delayInMinutes: 1 });
+    chrome.alarms.create("eyeBreakReminder", { delayInMinutes: 20 });
 });
